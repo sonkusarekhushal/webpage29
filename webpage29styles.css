@@ -1,0 +1,100 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article {
+    width: 70%;
+}
+
+aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design Using Media Queries */
+
+/* Small devices (less than 768px) */
+@media (max-width: 767px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    article, aside {
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
+
+/* Medium devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    article {
+        width: 65%;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+}
